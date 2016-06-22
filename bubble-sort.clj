@@ -1,4 +1,5 @@
-;;more inline with the classical selection sort algorithm as opposed to the selection-sort-1
+;;bubble algorithm
+
 (defn swap-elements [element-a element-b coll]
      (let [index-a (.indexOf coll element-a)
            index-b (.indexOf coll element-b)]
