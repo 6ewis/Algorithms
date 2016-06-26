@@ -15,7 +15,7 @@
           (recur loop-ls (rest loop-rest))
           (recur (swap-elements first-position next-position loop-ls) (rest loop-rest)))))))
 
-(defn selection-sort [ls]
+(defn bubble-sort [ls]
   (loop [loop-ls ls loop-rest ls last-sorted []]
     (let [[y & more-y] loop-ls
           sorted (conj last-sorted y)]
